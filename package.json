@@ -1,0 +1,59 @@
+{
+  "name": "postalkit-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Mexican postal codes (SEPOMEX): look up códigos postales, colonias, municipalities, streets and geocoding from Claude, Cursor and other AI assistants. Powered by the PostalKit API.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "postalkit",
+    "mexico",
+    "postal code",
+    "codigo postal",
+    "sepomex",
+    "colonias",
+    "geocoding",
+    "claude",
+    "cursor"
+  ],
+  "author": "PostalKit (https://postalkit.mx/)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "homepage": "https://postalkit.mx/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postalkit/postalkit-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postalkit/postalkit-mcp/issues"
+  },
+  "types": "dist/server.d.ts",
+  "bin": {
+    "postalkit-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
