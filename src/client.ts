@@ -3,7 +3,7 @@
  */
 
 export const DEFAULT_BASE_URL = "https://api.postalkit.mx";
-export const VERSION = "0.1.0";
+export const VERSION = "0.1.1";
 
 export type Query = Record<string, string | number | boolean | undefined | null>;
 

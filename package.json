@@ -1,6 +1,7 @@
 {
   "name": "postalkit-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.postalkit/postalkit-mcp",
   "description": "MCP server for Mexican postal codes (SEPOMEX): look up códigos postales, colonias, municipalities, streets and geocoding from Claude, Cursor and other AI assistants. Powered by the PostalKit API.",
   "main": "dist/server.js",
   "scripts": {

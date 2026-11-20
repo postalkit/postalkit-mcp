@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.postalkit/postalkit-mcp",
+  "title": "PostalKit: Mexican postal codes",
+  "description": "Mexican postal codes (SEPOMEX), colonias, municipalities, streets and geocoding via PostalKit.",
+  "websiteUrl": "https://postalkit.mx/",
+  "repository": {
+    "url": "https://github.com/postalkit/postalkit-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "postalkit-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "POSTALKIT_KEY",
+          "description": "Your PostalKit API key. Get a free one at https://postalkit.mx/register",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
